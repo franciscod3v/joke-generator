@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Joke Generator</title>
+    <meta name="title" content="The Joke Generator">
+    </meta>
+    <meta name="description" content="A website that generates jokes">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/logoJokeWeb.png" alt="Logo The Joke Generator" class="header__logo">
+    </header>
+    <main>
+        <nav class="main__nav">
+            <ul class="nav__list">
+                <li class="list__item list__item--selected">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="list__item list__item--noSelected">
+                    <a href="#">Contact Developer</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main__generator">
+            <h2 class="main__title">Generate your joke</h2>
+            <form action="" id="formJoke" class="main__form">
+                <div class="form__line">
+                    <label for="" class="main__label">Choose a category</label>
+                    <select name="categories" id="categories-container" class="main__select"></select>
+                </div>
+                <input type="button" value="Get a joke!" id="btn-form" class="main__btn">
+            </form>
+            <div id="joke-container" class="main__containerJoke desactive">
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
